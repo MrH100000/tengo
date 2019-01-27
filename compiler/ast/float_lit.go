@@ -4,9 +4,9 @@ import "github.com/d5/tengo/compiler/source"
 
 // FloatLit represents a floating point literal.
 type FloatLit struct {
-	Value    float64
-	ValuePos source.Pos
-	Literal  string
+	Value    float64    `json:"value"`
+	ValuePos source.Pos `json:"value_pos"`
+	Literal  string     `json:"literal"`
 }
 
 func (e *FloatLit) exprNode() {}

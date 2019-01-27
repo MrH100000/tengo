@@ -8,8 +8,8 @@ import (
 
 // File represents a file unit.
 type File struct {
-	InputFile *source.File
-	Stmts     []Stmt
+	InputFile *source.File `json:"-"`
+	Stmts     []Stmt       `json:"stmts"`
 }
 
 // Pos returns the position of first character belonging to the node.

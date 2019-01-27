@@ -4,7 +4,7 @@ import "github.com/d5/tengo/compiler/source"
 
 // UndefinedLit represents an undefined literal.
 type UndefinedLit struct {
-	TokenPos source.Pos
+	TokenPos source.Pos `json:"token_pos"`
 }
 
 func (e *UndefinedLit) exprNode() {}

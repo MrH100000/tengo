@@ -8,9 +8,9 @@ import (
 
 // MapLit represents a map literal.
 type MapLit struct {
-	LBrace   source.Pos
-	Elements []*MapElementLit
-	RBrace   source.Pos
+	LBrace   source.Pos       `json:"lbrace"`
+	Elements []*MapElementLit `json:"elements"`
+	RBrace   source.Pos       `json:"rbrace"`
 }
 
 func (e *MapLit) exprNode() {}

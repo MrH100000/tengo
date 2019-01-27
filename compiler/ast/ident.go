@@ -4,8 +4,8 @@ import "github.com/d5/tengo/compiler/source"
 
 // Ident represents an identifier.
 type Ident struct {
-	Name    string
-	NamePos source.Pos
+	Name    string     `json:"name"`
+	NamePos source.Pos `json:"name_pos"`
 }
 
 func (e *Ident) exprNode() {}

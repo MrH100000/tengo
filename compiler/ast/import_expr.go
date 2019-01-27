@@ -7,9 +7,9 @@ import (
 
 // ImportExpr represents an import expression
 type ImportExpr struct {
-	ModuleName string
-	Token      token.Token
-	TokenPos   source.Pos
+	ModuleName string      `json:"module_name"`
+	Token      token.Token `json:"token"`
+	TokenPos   source.Pos  `json:"token_pos"`
 }
 
 func (e *ImportExpr) exprNode() {}

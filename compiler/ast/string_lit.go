@@ -4,9 +4,9 @@ import "github.com/d5/tengo/compiler/source"
 
 // StringLit represents a string literal.
 type StringLit struct {
-	Value    string
-	ValuePos source.Pos
-	Literal  string
+	Value    string     `json:"value"`
+	ValuePos source.Pos `json:"value_pos"`
+	Literal  string     `json:"literal"`
 }
 
 func (e *StringLit) exprNode() {}

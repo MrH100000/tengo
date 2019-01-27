@@ -6,10 +6,10 @@ import (
 
 // ErrorExpr represents an error expression
 type ErrorExpr struct {
-	Expr     Expr
-	ErrorPos source.Pos
-	LParen   source.Pos
-	RParen   source.Pos
+	Expr     Expr       `json:"expr"`
+	ErrorPos source.Pos `json:"error_pos"`
+	LParen   source.Pos `json:"lparen"`
+	RParen   source.Pos `json:"rparen"`
 }
 
 func (e *ErrorExpr) exprNode() {}

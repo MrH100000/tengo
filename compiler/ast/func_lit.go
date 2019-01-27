@@ -4,8 +4,8 @@ import "github.com/d5/tengo/compiler/source"
 
 // FuncLit represents a function literal.
 type FuncLit struct {
-	Type *FuncType
-	Body *BlockStmt
+	Type *FuncType  `json:"type"`
+	Body *BlockStmt `json:"body"`
 }
 
 func (e *FuncLit) exprNode() {}

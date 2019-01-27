@@ -496,10 +496,10 @@ func (p *Parser) parseImmutableExpr() ast.Expr {
 	rparen := p.expect(token.RParen)
 
 	expr := &ast.ImmutableExpr{
-		ErrorPos: pos,
-		Expr:     value,
-		LParen:   lparen,
-		RParen:   rparen,
+		ImmutablePos: pos,
+		Expr:         value,
+		LParen:       lparen,
+		RParen:       rparen,
 	}
 
 	return expr

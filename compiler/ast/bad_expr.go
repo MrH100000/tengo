@@ -4,8 +4,8 @@ import "github.com/d5/tengo/compiler/source"
 
 // BadExpr represents a bad expression.
 type BadExpr struct {
-	From source.Pos
-	To   source.Pos
+	From source.Pos `json:"from"`
+	To   source.Pos `json:"to"`
 }
 
 func (e *BadExpr) exprNode() {}

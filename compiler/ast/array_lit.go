@@ -8,9 +8,9 @@ import (
 
 // ArrayLit represents an array literal.
 type ArrayLit struct {
-	Elements []Expr
-	LBrack   source.Pos
-	RBrack   source.Pos
+	Elements []Expr     `json:"elements"`
+	LBrack   source.Pos `json:"lbrack"`
+	RBrack   source.Pos `json:"rbrack"`
 }
 
 func (e *ArrayLit) exprNode() {}

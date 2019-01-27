@@ -4,10 +4,10 @@ import "github.com/d5/tengo/compiler/source"
 
 // MapElementLit represents a map element.
 type MapElementLit struct {
-	Key      string
-	KeyPos   source.Pos
-	ColonPos source.Pos
-	Value    Expr
+	Key      string     `json:"key"`
+	KeyPos   source.Pos `json:"key_pos"`
+	ColonPos source.Pos `json:"colon_pos"`
+	Value    Expr       `json:"value"`
 }
 
 func (e *MapElementLit) exprNode() {}

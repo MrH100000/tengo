@@ -4,10 +4,10 @@ import "github.com/d5/tengo/compiler/source"
 
 // IndexExpr represents an index expression.
 type IndexExpr struct {
-	Expr   Expr
-	LBrack source.Pos
-	Index  Expr
-	RBrack source.Pos
+	Expr   Expr       `json:"expr"`
+	LBrack source.Pos `json:"lbrack"`
+	Index  Expr       `json:"index"`
+	RBrack source.Pos `json:"rbrack"`
 }
 
 func (e *IndexExpr) exprNode() {}

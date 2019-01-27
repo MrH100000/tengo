@@ -8,9 +8,9 @@ import (
 
 // BlockStmt represents a block statement.
 type BlockStmt struct {
-	Stmts  []Stmt
-	LBrace source.Pos
-	RBrace source.Pos
+	Stmts  []Stmt     `json:"stmts"`
+	LBrace source.Pos `json:"lbrace"`
+	RBrace source.Pos `json:"rbrace"`
 }
 
 func (s *BlockStmt) stmtNode() {}

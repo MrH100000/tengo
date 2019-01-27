@@ -4,7 +4,7 @@ import "github.com/d5/tengo/compiler/source"
 
 // ExprStmt represents an expression statement.
 type ExprStmt struct {
-	Expr Expr
+	Expr Expr `json:"expr"`
 }
 
 func (s *ExprStmt) stmtNode() {}

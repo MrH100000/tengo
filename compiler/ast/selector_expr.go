@@ -4,8 +4,8 @@ import "github.com/d5/tengo/compiler/source"
 
 // SelectorExpr represents a selector expression.
 type SelectorExpr struct {
-	Expr Expr
-	Sel  Expr
+	Expr Expr `json:"expr"`
+	Sel  Expr `json:"sel"`
 }
 
 func (e *SelectorExpr) exprNode() {}

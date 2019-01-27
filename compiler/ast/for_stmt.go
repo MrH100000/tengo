@@ -4,11 +4,11 @@ import "github.com/d5/tengo/compiler/source"
 
 // ForStmt represents a for statement.
 type ForStmt struct {
-	ForPos source.Pos
-	Init   Stmt
-	Cond   Expr
-	Post   Stmt
-	Body   *BlockStmt
+	ForPos source.Pos `json:"for_pos"`
+	Init   Stmt       `json:"init"`
+	Cond   Expr       `json:"cond"`
+	Post   Stmt       `json:"post"`
+	Body   *BlockStmt `json:"body"`
 }
 
 func (s *ForStmt) stmtNode() {}

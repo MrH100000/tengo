@@ -4,9 +4,9 @@ import "github.com/d5/tengo/compiler/source"
 
 // CharLit represents a character literal.
 type CharLit struct {
-	Value    rune
-	ValuePos source.Pos
-	Literal  string
+	Value    rune       `json:"value"`
+	ValuePos source.Pos `json:"value_pos"`
+	Literal  string     `json:"literal"`
 }
 
 func (e *CharLit) exprNode() {}

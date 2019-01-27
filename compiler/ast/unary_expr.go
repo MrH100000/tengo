@@ -7,9 +7,9 @@ import (
 
 // UnaryExpr represents an unary operator expression.
 type UnaryExpr struct {
-	Expr     Expr
-	Token    token.Token
-	TokenPos source.Pos
+	Expr     Expr        `json:"expr"`
+	Token    token.Token `json:"token"`
+	TokenPos source.Pos  `json:"token_pos"`
 }
 
 func (e *UnaryExpr) exprNode() {}

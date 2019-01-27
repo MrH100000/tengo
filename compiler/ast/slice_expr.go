@@ -4,11 +4,11 @@ import "github.com/d5/tengo/compiler/source"
 
 // SliceExpr represents a slice expression.
 type SliceExpr struct {
-	Expr   Expr
-	LBrack source.Pos
-	Low    Expr
-	High   Expr
-	RBrack source.Pos
+	Expr   Expr       `json:"expr"`
+	LBrack source.Pos `json:"lbrack"`
+	Low    Expr       `json:"low"`
+	High   Expr       `json:"high"`
+	RBrack source.Pos `json:"rbrack"`
 }
 
 func (e *SliceExpr) exprNode() {}

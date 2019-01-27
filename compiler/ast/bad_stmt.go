@@ -4,8 +4,8 @@ import "github.com/d5/tengo/compiler/source"
 
 // BadStmt represents a bad statement.
 type BadStmt struct {
-	From source.Pos
-	To   source.Pos
+	From source.Pos `json:"from"`
+	To   source.Pos `json:"to"`
 }
 
 func (s *BadStmt) stmtNode() {}

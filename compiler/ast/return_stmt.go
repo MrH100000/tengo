@@ -8,8 +8,8 @@ import (
 
 // ReturnStmt represents a return statement.
 type ReturnStmt struct {
-	ReturnPos source.Pos
-	Results   []Expr
+	ReturnPos source.Pos `json:"return_pos"`
+	Results   []Expr     `json:"results"`
 }
 
 func (s *ReturnStmt) stmtNode() {}

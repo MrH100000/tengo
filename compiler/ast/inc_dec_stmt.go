@@ -7,9 +7,9 @@ import (
 
 // IncDecStmt represents increment or decrement statement.
 type IncDecStmt struct {
-	Expr     Expr
-	Token    token.Token
-	TokenPos source.Pos
+	Expr     Expr        `json:"expr"`
+	Token    token.Token `json:"token"`
+	TokenPos source.Pos  `json:"token_pos"`
 }
 
 func (s *IncDecStmt) stmtNode() {}

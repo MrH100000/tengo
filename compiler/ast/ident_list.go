@@ -8,9 +8,9 @@ import (
 
 // IdentList represents a list of identifiers.
 type IdentList struct {
-	LParen source.Pos
-	List   []*Ident
-	RParen source.Pos
+	LParen source.Pos `json:"lparen"`
+	List   []*Ident   `json:"list"`
+	RParen source.Pos `json:"rparen"`
 }
 
 // Pos returns the position of first character belonging to the node.

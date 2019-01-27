@@ -4,9 +4,9 @@ import "github.com/d5/tengo/compiler/source"
 
 // ParenExpr represents a parenthesis wrapped expression.
 type ParenExpr struct {
-	Expr   Expr
-	LParen source.Pos
-	RParen source.Pos
+	Expr   Expr       `json:"expr"`
+	LParen source.Pos `json:"lparen"`
+	RParen source.Pos `json:"rparen"`
 }
 
 func (e *ParenExpr) exprNode() {}

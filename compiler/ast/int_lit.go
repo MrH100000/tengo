@@ -4,9 +4,9 @@ import "github.com/d5/tengo/compiler/source"
 
 // IntLit represents an integer literal.
 type IntLit struct {
-	Value    int64
-	ValuePos source.Pos
-	Literal  string
+	Value    int64      `json:"value"`
+	ValuePos source.Pos `json:"value_pos"`
+	Literal  string     `json:"literal"`
 }
 
 func (e *IntLit) exprNode() {}

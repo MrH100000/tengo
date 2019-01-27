@@ -4,11 +4,11 @@ import "github.com/d5/tengo/compiler/source"
 
 // IfStmt represents an if statement.
 type IfStmt struct {
-	IfPos source.Pos
-	Init  Stmt
-	Cond  Expr
-	Body  *BlockStmt
-	Else  Stmt // else branch; or nil
+	IfPos source.Pos `json:"if_pos"`
+	Init  Stmt       `json:"init"`
+	Cond  Expr       `json:"cond"`
+	Body  *BlockStmt `json:"body"`
+	Else  Stmt       `json:"else"` // else branch; or nil
 }
 
 func (s *IfStmt) stmtNode() {}

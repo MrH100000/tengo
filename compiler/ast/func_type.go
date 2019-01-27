@@ -4,8 +4,8 @@ import "github.com/d5/tengo/compiler/source"
 
 // FuncType represents a function type definition.
 type FuncType struct {
-	FuncPos source.Pos
-	Params  *IdentList
+	FuncPos source.Pos `json:"func_pos"`
+	Params  *IdentList `json:"params"`
 }
 
 func (e *FuncType) exprNode() {}

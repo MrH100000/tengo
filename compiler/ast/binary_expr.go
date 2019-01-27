@@ -7,10 +7,10 @@ import (
 
 // BinaryExpr represents a binary operator expression.
 type BinaryExpr struct {
-	LHS      Expr
-	RHS      Expr
-	Token    token.Token
-	TokenPos source.Pos
+	LHS      Expr        `json:"lhs"`
+	RHS      Expr        `json:"rhs"`
+	Token    token.Token `json:"token"`
+	TokenPos source.Pos  `json:"token_pos"`
 }
 
 func (e *BinaryExpr) exprNode() {}

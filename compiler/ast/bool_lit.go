@@ -4,9 +4,9 @@ import "github.com/d5/tengo/compiler/source"
 
 // BoolLit represents a boolean literal.
 type BoolLit struct {
-	Value    bool
-	ValuePos source.Pos
-	Literal  string
+	Value    bool       `json:"value"`
+	ValuePos source.Pos `json:"value_pos"`
+	Literal  string     `json:"literal"`
 }
 
 func (e *BoolLit) exprNode() {}

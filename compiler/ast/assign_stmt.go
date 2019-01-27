@@ -9,10 +9,10 @@ import (
 
 // AssignStmt represents an assignment statement.
 type AssignStmt struct {
-	LHS      []Expr
-	RHS      []Expr
-	Token    token.Token
-	TokenPos source.Pos
+	LHS      []Expr      `json:"lhs"`
+	RHS      []Expr      `json:"rhs"`
+	Token    token.Token `json:"token"`
+	TokenPos source.Pos  `json:"token_pos"`
 }
 
 func (s *AssignStmt) stmtNode() {}

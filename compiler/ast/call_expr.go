@@ -8,10 +8,10 @@ import (
 
 // CallExpr represents a function call expression.
 type CallExpr struct {
-	Func   Expr
-	LParen source.Pos
-	Args   []Expr
-	RParen source.Pos
+	Func   Expr       `json:"func"`
+	LParen source.Pos `json:"lparen"`
+	Args   []Expr     `json:"args"`
+	RParen source.Pos `json:"rparen"`
 }
 
 func (e *CallExpr) exprNode() {}

@@ -4,8 +4,8 @@ import "github.com/d5/tengo/compiler/source"
 
 // EmptyStmt represents an empty statement.
 type EmptyStmt struct {
-	Semicolon source.Pos
-	Implicit  bool
+	Semicolon source.Pos `json:"semicolon"`
+	Implicit  bool       `json:"implicit"`
 }
 
 func (s *EmptyStmt) stmtNode() {}

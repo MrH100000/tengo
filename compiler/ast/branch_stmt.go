@@ -7,9 +7,9 @@ import (
 
 // BranchStmt represents a branch statement.
 type BranchStmt struct {
-	Token    token.Token
-	TokenPos source.Pos
-	Label    *Ident
+	Token    token.Token `json:"token"`
+	TokenPos source.Pos  `json:"token_pos"`
+	Label    *Ident      `json:"Label"`
 }
 
 func (s *BranchStmt) stmtNode() {}
